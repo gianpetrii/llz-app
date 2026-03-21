@@ -14,6 +14,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "LLZ macro y finanzas - Consultora especializada",
   description: "Consultora especializada en macro, finanzas y política monetaria. Te ayudamos a entender para que tomes tus decisiones con más y mejor información.",
+  icons: {
+    icon: '/icon.svg',
+  },
 };
 
 export function generateStaticParams() {

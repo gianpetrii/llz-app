@@ -75,6 +75,25 @@
       "title": "Our Approach",
       "description": "We combine technical rigor with expository clarity, delivering in-depth analysis that is both accurate and understandable for our clients."
     },
+    "team": {
+      "title": "Who we are",
+      "subtitle": "Team of professionals with extensive experience in economic and financial analysis",
+      "member1": {
+        "name": "Luciano Laspina",
+        "role": "Economist and Analyst",
+        "description": "Specialist in monetary policy and financial markets with over 10 years of experience."
+      },
+      "member2": {
+        "name": "Lucas Laspina",
+        "role": "Economist and Analyst",
+        "description": "Expert in macroeconomic situation and international market analysis."
+      },
+      "member3": {
+        "name": "Ezequiel Zarate",
+        "role": "Economist and Analyst",
+        "description": "Specialized in sectoral analysis and regional economic trends."
+      }
+    },
     "clients": {
       "title": "Who do we work for?",
       "investors": {
@@ -120,9 +139,66 @@
     "description": "Specialized consulting in macro, finance and monetary policy.",
     "navigation": "Navigation",
     "services": "Services",
+    "legal": "Legal",
     "weeklyReports": "Weekly reports",
     "technicalSupport": "Technical support",
     "presentations": "Presentations",
+    "terms": "Terms and conditions",
+    "privacy": "Privacy policy",
     "copyright": "LLZ macro y finanzas. All rights reserved."
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "lastUpdated": "Last updated: March 2026",
+    "intro": "Welcome to LLZ macro y finanzas. By using our services, you accept the following terms and conditions.",
+    "services": {
+      "title": "1. Services",
+      "description": "LLZ provides economic consulting services, analysis reports and presentations. The content is informative in nature and does not constitute personalized financial advice."
+    },
+    "use": {
+      "title": "2. Use of Content",
+      "description": "The content provided is for the exclusive use of the contracting client. Its reproduction, distribution or commercial use without express authorization is prohibited."
+    },
+    "responsibility": {
+      "title": "3. Responsibility",
+      "description": "The analysis and opinions expressed are informative in nature. Investment decisions are the sole responsibility of the user."
+    },
+    "payment": {
+      "title": "4. Payments and Billing",
+      "description": "Services are billed according to the contracted plan. Payment must be made under the terms agreed upon at the time of contracting."
+    },
+    "modifications": {
+      "title": "5. Modifications",
+      "description": "We reserve the right to modify these terms. Changes will be notified to clients in advance."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: March 2026",
+    "intro": "At LLZ we respect your privacy and are committed to protecting your personal data.",
+    "collection": {
+      "title": "1. Information We Collect",
+      "description": "We collect information you provide when contacting us or hiring our services: name, email, company and contact details."
+    },
+    "use": {
+      "title": "2. Use of Information",
+      "description": "We use your information to: provide our services, communicate with you, send contracted reports and improve our services."
+    },
+    "protection": {
+      "title": "3. Data Protection",
+      "description": "We implement security measures to protect your information. We do not share your data with third parties without your consent."
+    },
+    "rights": {
+      "title": "4. Your Rights",
+      "description": "You have the right to access, rectify or delete your personal data. Contact us to exercise these rights."
+    },
+    "cookies": {
+      "title": "5. Cookies",
+      "description": "We use cookies to improve the user experience. You can configure your browser to reject them."
+    },
+    "contact": {
+      "title": "6. Contact",
+      "description": "For privacy inquiries, contact us at: contacto@llz.com.ar"
+    }
   }
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -12,12 +12,36 @@ import { useTranslations } from 'next-intl';
 export default function ContactPage() {
   const t = useTranslations('contact');
   const [loading, setLoading] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set());
+  const observerRef = useRef<IntersectionObserver | null>(null);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     company: "",
     message: "",
   });
+
+  useEffect(() => {
+    setMounted(true);
+    
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisibleSections((prev) => new Set(prev).add(entry.target.id));
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+    );
+
+    document.querySelectorAll('[data-animate]').forEach((el) => {
+      observerRef.current?.observe(el);
+    });
+
+    return () => observerRef.current?.disconnect();
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -42,10 +66,37 @@ export default function ContactPage() {
     }));
   };
 
+  if (!mounted) {
+    return (
+      <div className="container py-12 md:py-20">
+        <div className="mx-auto max-w-5xl space-y-12">
+          <div className="space-y-4 text-center">
+            <div className="h-12 bg-muted/50 rounded-lg animate-pulse mx-auto max-w-md" />
+            <div className="h-6 bg-muted/30 rounded-lg animate-pulse mx-auto max-w-xl" />
+          </div>
+          <div className="grid gap-8 md:grid-cols-3">
+            <div className="h-32 bg-muted/20 rounded-lg animate-pulse" />
+            <div className="h-32 bg-muted/20 rounded-lg animate-pulse" />
+            <div className="h-32 bg-muted/20 rounded-lg animate-pulse" />
+          </div>
+          <div className="h-96 bg-muted/20 rounded-lg animate-pulse" />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="container py-12 md:py-20">
       <div className="mx-auto max-w-5xl space-y-12">
-        <div className="space-y-4 text-center animate-fade-in-up">
+        <div 
+          id="contact-header"
+          data-animate
+          className={`space-y-4 text-center transition-all duration-700 ${
+            visibleSections.has('contact-header')
+              ? 'opacity-100 translate-y-0'
+              : 'opacity-0 translate-y-8'
+          }`}
+        >
           <h1 className="text-4xl font-bold md:text-5xl">{t('title')}</h1>
           <p className="text-lg text-muted-foreground max-w-[700px] mx-auto">
             {t('subtitle')}
@@ -53,7 +104,16 @@ export default function ContactPage() {
         </div>
 
         <div className="grid gap-8 md:grid-cols-3">
-          <Card className="border-2 animate-fade-in-up animation-delay-200">
+          <div
+            id="contact-info-1"
+            data-animate
+            className={`transition-all duration-700 delay-100 ${
+              visibleSections.has('contact-info-1')
+                ? 'opacity-100 translate-y-0'
+                : 'opacity-0 translate-y-8'
+            }`}
+          >
+            <Card className="border-2 h-full">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-lg">
                 <Mail className="h-5 w-5 text-blue-600" />
@@ -64,37 +124,67 @@ export default function ContactPage() {
               <p className="text-sm text-muted-foreground">contacto@llz.com.ar</p>
             </CardContent>
           </Card>
+          </div>
 
-          <Card className="border-2 animate-fade-in-up animation-delay-400">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-lg">
-                <Clock className="h-5 w-5 text-cyan-600" />
-                {t('schedule')}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground whitespace-pre-line">
-                {t('scheduleText')}
-              </p>
-            </CardContent>
-          </Card>
+          <div
+            id="contact-info-2"
+            data-animate
+            className={`transition-all duration-700 delay-200 ${
+              visibleSections.has('contact-info-2')
+                ? 'opacity-100 translate-y-0'
+                : 'opacity-0 translate-y-8'
+            }`}
+          >
+            <Card className="border-2 h-full">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-lg">
+                  <Clock className="h-5 w-5 text-cyan-600" />
+                  {t('schedule')}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground whitespace-pre-line">
+                  {t('scheduleText')}
+                </p>
+              </CardContent>
+            </Card>
+          </div>
 
-          <Card className="border-2 animate-fade-in-up animation-delay-600">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-lg">
-                <MapPin className="h-5 w-5 text-indigo-600" />
-                {t('location')}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground">
-                {t('locationText')}
-              </p>
-            </CardContent>
-          </Card>
+          <div
+            id="contact-info-3"
+            data-animate
+            className={`transition-all duration-700 delay-300 ${
+              visibleSections.has('contact-info-3')
+                ? 'opacity-100 translate-y-0'
+                : 'opacity-0 translate-y-8'
+            }`}
+          >
+            <Card className="border-2 h-full">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-lg">
+                  <MapPin className="h-5 w-5 text-indigo-600" />
+                  {t('location')}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  {t('locationText')}
+                </p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
 
-        <Card className="border-2 animate-fade-in-up animation-delay-800">
+        <div
+          id="contact-form"
+          data-animate
+          className={`transition-all duration-700 delay-400 ${
+            visibleSections.has('contact-form')
+              ? 'opacity-100 translate-y-0'
+              : 'opacity-0 translate-y-8'
+          }`}
+        >
+          <Card className="border-2">
           <CardHeader>
             <CardTitle className="text-2xl">{t('form.title')}</CardTitle>
             <p className="text-sm text-muted-foreground">
@@ -166,6 +256,7 @@ export default function ContactPage() {
             </form>
           </CardContent>
         </Card>
+        </div>
       </div>
     </div>
   );

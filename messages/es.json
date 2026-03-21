@@ -75,6 +75,25 @@
       "title": "Nuestro Enfoque",
       "description": "Combinamos rigor técnico con claridad expositiva, entregando análisis profundos que son tanto precisos como comprensibles para nuestros clientes."
     },
+    "team": {
+      "title": "Quiénes somos",
+      "subtitle": "Equipo de profesionales con amplia experiencia en análisis económico y financiero",
+      "member1": {
+        "name": "Luciano Laspina",
+        "role": "Economista y Analista",
+        "description": "Especialista en política monetaria y mercados financieros con más de 10 años de experiencia."
+      },
+      "member2": {
+        "name": "Lucas Laspina",
+        "role": "Economista y Analista",
+        "description": "Experto en coyuntura macroeconómica y análisis de mercados internacionales."
+      },
+      "member3": {
+        "name": "Ezequiel Zarate",
+        "role": "Economista y Analista",
+        "description": "Especializado en análisis sectorial y tendencias económicas regionales."
+      }
+    },
     "clients": {
       "title": "¿Para quién trabajamos?",
       "investors": {
@@ -120,9 +139,66 @@
     "description": "Consultora especializada en macro, finanzas y política monetaria.",
     "navigation": "Navegación",
     "services": "Servicios",
+    "legal": "Legal",
     "weeklyReports": "Informes semanales",
     "technicalSupport": "Soporte técnico",
     "presentations": "Presentaciones",
+    "terms": "Términos y condiciones",
+    "privacy": "Política de privacidad",
     "copyright": "LLZ macro y finanzas. Todos los derechos reservados."
+  },
+  "terms": {
+    "title": "Términos y Condiciones",
+    "lastUpdated": "Última actualización: Marzo 2026",
+    "intro": "Bienvenido a LLZ macro y finanzas. Al utilizar nuestros servicios, aceptas los siguientes términos y condiciones.",
+    "services": {
+      "title": "1. Servicios",
+      "description": "LLZ proporciona servicios de consultoría económica, informes de análisis y presentaciones. El contenido es de carácter informativo y no constituye asesoramiento financiero personalizado."
+    },
+    "use": {
+      "title": "2. Uso del Contenido",
+      "description": "El contenido proporcionado es para uso exclusivo del cliente contratante. Queda prohibida su reproducción, distribución o uso comercial sin autorización expresa."
+    },
+    "responsibility": {
+      "title": "3. Responsabilidad",
+      "description": "Los análisis y opiniones expresados son de carácter informativo. Las decisiones de inversión son responsabilidad exclusiva del usuario."
+    },
+    "payment": {
+      "title": "4. Pagos y Facturación",
+      "description": "Los servicios se facturan según el plan contratado. El pago debe realizarse en los términos acordados al momento de la contratación."
+    },
+    "modifications": {
+      "title": "5. Modificaciones",
+      "description": "Nos reservamos el derecho de modificar estos términos. Los cambios serán notificados a los clientes con anticipación."
+    }
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: Marzo 2026",
+    "intro": "En LLZ respetamos tu privacidad y nos comprometemos a proteger tus datos personales.",
+    "collection": {
+      "title": "1. Información que Recopilamos",
+      "description": "Recopilamos información que nos proporcionas al contactarnos o contratar nuestros servicios: nombre, email, empresa y datos de contacto."
+    },
+    "use": {
+      "title": "2. Uso de la Información",
+      "description": "Utilizamos tu información para: proporcionar nuestros servicios, comunicarnos contigo, enviar informes contratados y mejorar nuestros servicios."
+    },
+    "protection": {
+      "title": "3. Protección de Datos",
+      "description": "Implementamos medidas de seguridad para proteger tu información. No compartimos tus datos con terceros sin tu consentimiento."
+    },
+    "rights": {
+      "title": "4. Tus Derechos",
+      "description": "Tienes derecho a acceder, rectificar o eliminar tus datos personales. Contáctanos para ejercer estos derechos."
+    },
+    "cookies": {
+      "title": "5. Cookies",
+      "description": "Utilizamos cookies para mejorar la experiencia del usuario. Puedes configurar tu navegador para rechazarlas."
+    },
+    "contact": {
+      "title": "6. Contacto",
+      "description": "Para consultas sobre privacidad, contáctanos en: contacto@llz.com.ar"
+    }
   }
 }
