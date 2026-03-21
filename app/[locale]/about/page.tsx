@@ -96,6 +96,7 @@ export default function AboutPage() {
             </p>
           </CardContent>
         </Card>
+        </div>
 
         <div className="grid gap-6 md:grid-cols-2">
           <div
