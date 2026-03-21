@@ -1,0 +1,128 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de nosotros",
+    "contact": "Contacto"
+  },
+  "home": {
+    "hero": {
+      "badge": "Consultora especializada en economía",
+      "title": "Decisiones informadas en",
+      "titleHighlight": "macro y finanzas",
+      "subtitle": "Te ayudamos a entender la coyuntura económica para que tomes tus decisiones con más y mejor información.",
+      "cta": "Contactanos",
+      "learnMore": "Conocer más"
+    },
+    "services": {
+      "title": "¿Qué servicios brindamos?",
+      "subtitle": "Ofrecemos un conjunto integral de servicios para mantenerte informado sobre la coyuntura económica y financiera.",
+      "reports": {
+        "title": "Informes",
+        "description": "Reportes semanales donde se abordan los principales temas de coyuntura económica.",
+        "extra": "Incluye informes especiales con tópicos urgentes o sucesos internacionales de relevancia."
+      },
+      "support": {
+        "title": "Soporte técnico",
+        "description": "Vía de comunicación privada para consultas técnicas sobre las temáticas de los reportes.",
+        "extra": "Posibilidad de sugerir tópicos nuevos de pertinencia para los informes."
+      },
+      "presentations": {
+        "title": "Presentaciones",
+        "description": "Charlas presenciales o virtuales con los integrantes de LLZ.",
+        "extra": "Prioridad en tarifa y calendario para clientes con servicio de informes contratado."
+      }
+    },
+    "analysis": {
+      "title": "Análisis profundo de la economía",
+      "subtitle": "En LLZ nos especializamos en proporcionar análisis detallados y comprensibles de la situación macroeconómica, financiera y de política monetaria.",
+      "economic": {
+        "title": "Coyuntura económica",
+        "description": "Análisis actualizado de la situación económica nacional e internacional"
+      },
+      "monetary": {
+        "title": "Política monetaria",
+        "description": "Seguimiento de decisiones y tendencias en política monetaria"
+      },
+      "markets": {
+        "title": "Mercados internacionales",
+        "description": "Cobertura de eventos relevantes en los mercados globales"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para tomar mejores decisiones?",
+      "subtitle": "Contáctanos para conocer más sobre nuestros servicios y cómo podemos ayudarte a entender mejor la economía.",
+      "button": "Contactar ahora"
+    },
+    "stats": {
+      "clients": "Clientes",
+      "reports": "Informes",
+      "experience": "Años"
+    }
+  },
+  "about": {
+    "title": "Acerca de nosotros",
+    "subtitle": "Consultora especializada en macro, finanzas y política monetaria",
+    "mission": {
+      "title": "Nuestra Misión",
+      "p1": "En LLZ nos dedicamos a proporcionar análisis económicos de alta calidad que permitan a nuestros clientes tomar decisiones informadas en un entorno de constante cambio.",
+      "p2": "Nuestro enfoque se centra en la claridad y profundidad del análisis, traduciendo la complejidad macroeconómica en información accionable para inversores, empresas y profesionales del sector financiero."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "description": "Ser la consultora de referencia en análisis macroeconómico, reconocida por la precisión de nuestros informes y la calidad de nuestro servicio personalizado."
+    },
+    "approach": {
+      "title": "Nuestro Enfoque",
+      "description": "Combinamos rigor técnico con claridad expositiva, entregando análisis profundos que son tanto precisos como comprensibles para nuestros clientes."
+    },
+    "clients": {
+      "title": "¿Para quién trabajamos?",
+      "investors": {
+        "title": "Inversores",
+        "description": "Análisis de mercados y coyuntura para decisiones de inversión"
+      },
+      "companies": {
+        "title": "Empresas",
+        "description": "Información estratégica para planificación y gestión de riesgos"
+      },
+      "professionals": {
+        "title": "Profesionales",
+        "description": "Contenido especializado para analistas y consultores financieros"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Interesado en nuestros servicios? Contáctanos y te responderemos a la brevedad.",
+    "email": "Email",
+    "schedule": "Horario",
+    "scheduleText": "Lunes a Viernes\n9:00 - 18:00 hs",
+    "location": "Ubicación",
+    "locationText": "Buenos Aires, Argentina",
+    "form": {
+      "title": "Envíanos un mensaje",
+      "subtitle": "Completa el formulario y nos pondremos en contacto contigo",
+      "name": "Nombre completo",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Email",
+      "emailPlaceholder": "juan@empresa.com",
+      "company": "Empresa / Organización",
+      "companyPlaceholder": "Nombre de tu empresa (opcional)",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos qué servicio te interesa o qué consulta tienes...",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando...",
+      "success": "Mensaje enviado correctamente",
+      "successDescription": "Nos pondremos en contacto contigo a la brevedad."
+    }
+  },
+  "footer": {
+    "description": "Consultora especializada en macro, finanzas y política monetaria.",
+    "navigation": "Navegación",
+    "services": "Servicios",
+    "weeklyReports": "Informes semanales",
+    "technicalSupport": "Soporte técnico",
+    "presentations": "Presentaciones",
+    "copyright": "LLZ macro y finanzas. Todos los derechos reservados."
+  }
+}

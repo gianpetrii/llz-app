@@ -1,28 +1,33 @@
-import Link from "next/link";
+"use client";
+
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const t = useTranslations('footer');
+  const nav = useTranslations('nav');
 
   return (
     <footer className="border-t bg-background">
       <div className="container py-8 md:py-12">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div className="space-y-3">
-            <h3 className="text-lg font-semibold">Base App</h3>
+            <h3 className="text-lg font-semibold">LLZ macro y finanzas</h3>
             <p className="text-sm text-muted-foreground">
-              Tu aplicación base para proyectos con Next.js y Firebase.
+              {t('description')}
             </p>
           </div>
 
           <div className="space-y-3">
-            <h4 className="text-sm font-semibold">Navegación</h4>
+            <h4 className="text-sm font-semibold">{t('navigation')}</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   href="/"
                   className="text-muted-foreground hover:text-foreground"
                 >
-                  Inicio
+                  {nav('home')}
                 </Link>
               </li>
               <li>
@@ -30,7 +35,7 @@ export function Footer() {
                   href="/about"
                   className="text-muted-foreground hover:text-foreground"
                 >
-                  Acerca de
+                  {nav('about')}
                 </Link>
               </li>
               <li>
@@ -38,59 +43,24 @@ export function Footer() {
                   href="/contact"
                   className="text-muted-foreground hover:text-foreground"
                 >
-                  Contacto
+                  {nav('contact')}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div className="space-y-3">
-            <h4 className="text-sm font-semibold">Legal</h4>
+            <h4 className="text-sm font-semibold">{t('services')}</h4>
             <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/privacy"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  Política de Privacidad
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/terms"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  Términos y Condiciones
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="space-y-3">
-            <h4 className="text-sm font-semibold">Cuenta</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/login"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  Iniciar Sesión
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/register"
-                  className="text-muted-foreground hover:text-foreground"
-                >
-                  Registrarse
-                </Link>
-              </li>
+              <li className="text-muted-foreground">{t('weeklyReports')}</li>
+              <li className="text-muted-foreground">{t('technicalSupport')}</li>
+              <li className="text-muted-foreground">{t('presentations')}</li>
             </ul>
           </div>
         </div>
 
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {currentYear} Base App. Todos los derechos reservados.</p>
+          <p>&copy; {currentYear} {t('copyright')}</p>
         </div>
       </div>
     </footer>

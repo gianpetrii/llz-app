@@ -1,0 +1,128 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About us",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "badge": "Specialized consulting in economics",
+      "title": "Informed decisions in",
+      "titleHighlight": "macro and finance",
+      "subtitle": "We help you understand the economic situation so you can make your decisions with more and better information.",
+      "cta": "Contact us",
+      "learnMore": "Learn more"
+    },
+    "services": {
+      "title": "What services do we provide?",
+      "subtitle": "We offer a comprehensive set of services to keep you informed about the economic and financial situation.",
+      "reports": {
+        "title": "Reports",
+        "description": "Weekly reports addressing the main topics of economic situation.",
+        "extra": "Includes special reports with urgent topics or relevant international events."
+      },
+      "support": {
+        "title": "Technical support",
+        "description": "Private communication channel for technical queries about report topics.",
+        "extra": "Possibility to suggest new relevant topics for the reports."
+      },
+      "presentations": {
+        "title": "Presentations",
+        "description": "In-person or virtual talks with LLZ members.",
+        "extra": "Priority in rates and schedule for clients with contracted report service."
+      }
+    },
+    "analysis": {
+      "title": "In-depth economic analysis",
+      "subtitle": "At LLZ we specialize in providing detailed and understandable analysis of the macroeconomic, financial and monetary policy situation.",
+      "economic": {
+        "title": "Economic situation",
+        "description": "Updated analysis of the national and international economic situation"
+      },
+      "monetary": {
+        "title": "Monetary policy",
+        "description": "Monitoring of decisions and trends in monetary policy"
+      },
+      "markets": {
+        "title": "International markets",
+        "description": "Coverage of relevant events in global markets"
+      }
+    },
+    "cta": {
+      "title": "Ready to make better decisions?",
+      "subtitle": "Contact us to learn more about our services and how we can help you better understand the economy.",
+      "button": "Contact now"
+    },
+    "stats": {
+      "clients": "Clients",
+      "reports": "Reports",
+      "experience": "Years"
+    }
+  },
+  "about": {
+    "title": "About us",
+    "subtitle": "Specialized consulting in macro, finance and monetary policy",
+    "mission": {
+      "title": "Our Mission",
+      "p1": "At LLZ we are dedicated to providing high-quality economic analysis that allows our clients to make informed decisions in a constantly changing environment.",
+      "p2": "Our approach focuses on clarity and depth of analysis, translating macroeconomic complexity into actionable information for investors, companies and financial sector professionals."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be the reference consulting firm in macroeconomic analysis, recognized for the accuracy of our reports and the quality of our personalized service."
+    },
+    "approach": {
+      "title": "Our Approach",
+      "description": "We combine technical rigor with expository clarity, delivering in-depth analysis that is both accurate and understandable for our clients."
+    },
+    "clients": {
+      "title": "Who do we work for?",
+      "investors": {
+        "title": "Investors",
+        "description": "Market and situation analysis for investment decisions"
+      },
+      "companies": {
+        "title": "Companies",
+        "description": "Strategic information for planning and risk management"
+      },
+      "professionals": {
+        "title": "Professionals",
+        "description": "Specialized content for analysts and financial consultants"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Interested in our services? Contact us and we will respond shortly.",
+    "email": "Email",
+    "schedule": "Schedule",
+    "scheduleText": "Monday to Friday\n9:00 AM - 6:00 PM",
+    "location": "Location",
+    "locationText": "Buenos Aires, Argentina",
+    "form": {
+      "title": "Send us a message",
+      "subtitle": "Fill out the form and we will contact you",
+      "name": "Full name",
+      "namePlaceholder": "John Doe",
+      "email": "Email",
+      "emailPlaceholder": "john@company.com",
+      "company": "Company / Organization",
+      "companyPlaceholder": "Your company name (optional)",
+      "message": "Message",
+      "messagePlaceholder": "Tell us which service you're interested in or what question you have...",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent successfully",
+      "successDescription": "We will contact you shortly."
+    }
+  },
+  "footer": {
+    "description": "Specialized consulting in macro, finance and monetary policy.",
+    "navigation": "Navigation",
+    "services": "Services",
+    "weeklyReports": "Weekly reports",
+    "technicalSupport": "Technical support",
+    "presentations": "Presentations",
+    "copyright": "LLZ macro y finanzas. All rights reserved."
+  }
+}

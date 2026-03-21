@@ -1,6 +1,8 @@
-import Link from "next/link";
+'use client';
+
 import { Button } from "@/components/ui/button";
 import { Home, ArrowLeft } from "lucide-react";
+import { Link } from "@/i18n/routing";
 
 export default function NotFound() {
   return (
