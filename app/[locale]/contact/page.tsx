@@ -25,22 +25,35 @@ export default function ContactPage() {
   useEffect(() => {
     setMounted(true);
     
-    observerRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setVisibleSections((prev) => new Set(prev).add(entry.target.id));
-          }
-        });
-      },
-      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
-    );
+    const timer = setTimeout(() => {
+      observerRef.current = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setVisibleSections((prev) => new Set(prev).add(entry.target.id));
+            }
+          });
+        },
+        { threshold: 0.05, rootMargin: '50px' }
+      );
 
-    document.querySelectorAll('[data-animate]').forEach((el) => {
-      observerRef.current?.observe(el);
-    });
+      const elements = document.querySelectorAll('[data-animate]');
+      elements.forEach((el) => {
+        observerRef.current?.observe(el);
+      });
 
-    return () => observerRef.current?.disconnect();
+      elements.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          setVisibleSections((prev) => new Set(prev).add(el.id));
+        }
+      });
+    }, 50);
+
+    return () => {
+      clearTimeout(timer);
+      observerRef.current?.disconnect();
+    };
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
